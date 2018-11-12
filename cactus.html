@@ -1,0 +1,84 @@
+<style>
+  body {
+    height: 1000;
+
+
+  }
+
+   #cactus {
+    height: 90;
+    width: 50;
+    background: green;
+    margin: auto;
+    border-radius: 50%;
+    position: relative;
+    bottom: -50px;
+    border: groove;
+
+    animation-name: grow;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+
+  #left-branch {
+	background: #77b039;
+	height: 35px; width: 9px;
+	position: absolute; left: -12px; top: 24px;
+	border-radius:100% 0% 0% 0%;
+	-webkit-border-radius:100% 0% 0% 0%;
+	-moz-border-radius:100% 0% 0% 0%;
+	-ms-border-radius:100% 0% 0% 0%;
+	-o-border-radius:100% 0% 0% 0%;
+  }
+
+  #right-branch {
+	background: #77b039;
+	height: 35px; width: 9px;
+	position: absolute; top: 24px; left: 10px;
+	border-radius:0% 100% 0% 0%;
+	-webkit-border-radius:0% 100% 0% 0%;
+	-moz-border-radius:0% 100% 0% 0%;
+	-ms-border-radius:0% 100% 0% 0%;
+	-o-border-radius:0% 100% 0% 0%;
+
+	transform: rotate(50deg);
+	-webkit-transform: rotate(50deg);
+	-moz-transform: rotate(50deg);
+	-ms-transform: rotate(50deg);
+	-o-transform: rotate(50deg);
+}
+
+  #pot {
+    width: 90;
+    height: 0;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-top: 90px solid brown;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+
+}
+
+#flower {
+  width: 10;
+  height: 10;
+  border-radius: 50%;
+  background-color: red;
+  margin: auto;
+  top: 10;
+  left: 5;
+  position: relative;
+  z-index: 3;
+
+}
+
+@keyframes grow {
+    100% {
+  transform: scale(1.6)
+  }
+  }
+
+</style>
+<div id="cactus"><div id="flower"></div><div id="left-branch"></div></div>
+<div id="pot"><div>
