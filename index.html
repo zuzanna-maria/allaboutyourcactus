@@ -1,10 +1,159 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-<title>all about your cactus</title>
+  <link rel=“stylesheet” href=“css/styles.css”>
+  <title>all about your cactus</title>
 </head>
 <body>
+  <header>
+    <h1>All about your cactus</h1>
+    <div class=“menu”>
+      <ul> </ul>
+    </div>
+  </header>
+  <div class=“intro”>
+    <h2>Section name</h2>
+    <p>Cactuses and succulents are popular home and office plants as they easily fit into various interiors, help to create cosiness, and are not demanded in care. However, even these simple in caring plants still require some attention to stay healthy and grow further. We are here to share basic rules and expert tips on planting so there is always happy plant in each your pot!</p>
+  </div>
+  <div class=“section” id="choosing plant">
+    <h2>Choosing your plant</h2>
+    <p> There are several things to consider when choosing your new prickly companion.
+      Would you like your cactus to be a dramatic statement piece or small and discreet?
+      Are you prepared to give your plant some TLC or are you after something more low-maintenance?
+      Our quiz will give you some ideas on what kind of cactus could be perfect for you. </p>
+    <button>Read more</button>
 
-</body>
+
+
+  </div>
+  <div class=“read-more” id="watering">
+    <h2>Watering</h2>
+    <p>Cacti, which are native to the desert, can famously survive with very little water —
+      but need the right amount at the right time in order to actually thrive. The amount of
+      water you will need to provide your plant with will vary according to the season
+      and stage of growth.
+      <div id=watering-body>
+      <div id=watering-body1>When growing, water your cactus once a week and make sure that the water soaks the ground thoroughly.
+      To ensure your plant has all the compounds it needs, add a diluted fertilizer to the water you use —
+      choose one with balanced proportions of nitrogen, phosphorus and potassium.</div><br>
+
+      <div id=watering-body2>Water your cactus more frequently in summer and spring. During fall and winter,
+      the plant’s rest period, it’s advised to let the soil dry out between watering —
+      as long as you ensure the cactus doesn’t shrivel.</div><br>
+
+      <div id=watering-body3>Tap water can be alkaline or hard, which can cause buildup of minerals in the soil.
+      This is why it’s a good idea to periodically repot your plants — and collect rain
+      water for your plants if you can.</div>
+    </div>
+    </p>
+    <button onclick="myFunction()">Read more</button>
+    <script>
+    function myFunction() {
+        var x = document.getElementById("watering-body");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
+    </script>
+  </div>
+
+
+
+
+
+
+
+
+  <div class=“section” id="lightning">
+    <h2>Lightning</h2>
+
+    <p>Although cacti love sunlight and are pretty sturdy plants,
+      too much direct sunlight can stress them out. This applies
+      particularly if they are exposed to high temperatures at the same time.
+      <div id="lightning-body">
+        <div id="lightning-body1">
+      Too much light can cause your cactus to appear 'bleached out’ or even scorch,
+      causing permanent damage, so it’s important to make sure to keep an eye on
+      it during the summer months.</div><br>
+
+      <div id="lightning-body2">When your cactus lacks sunlight it can start to reach for the light source —
+      making it look elongated or misshapen. If you see this happening, place your
+      cactus in a sunnier spot, but do so gradually to avoid scorching. </div><br>
+
+      <div id="lightning-body3">If you are unable to provide your cactus with sufficient sunlight indoors,
+      consider investing in a grow light fixture. The light should be at least
+      2,000 lumens for each square of light to provide the kind of light exposure
+      the cacti would get in their natural habitat. </div></p><br>
+
+  </div>
+
+
+<button onclick="myFunction()">Read more</button>
+<script>
+  function myFunction() {
+      var x = document.getElementById("lightning-body");
+      if (x.style.display === "none") {
+          x.style.display = "block";
+      } else {
+          x.style.display = "none";
+      }
+  }
+  </script>
+
+
+  <div class=“section” id="potting">
+    <h2>Potting</h2>
+    <p>Given the popularity of cacti as ornamental plants, you will likely want
+      to experiment with ornamental pots to provide an elegant backdrop to your plant.
+      The good news is that cacti are versatile and can happily grow in both ceramic and plastic pots.
+      <div id=potting-body>
+        <div id=potting-body1>Most cacti have fibrous, superficial roots, which means they
+          will enjoy being in a wide, shallow pot. Make sure to check what type of root system
+          your species of cactus has to ensure you provide a suitable container for it to grow in.</div><br>
+        <div id=potting-body2>The soil you choose for your cactus should drain well to
+          ensure water doesn’t build up in the pot. A good tip to ensure this is to mix
+          some compost, sand and grit (for example crushed pumice) into the soil.  </div><br>
+        <div id=potting-body3>Regular repotting is important to refresh
+          the soil and ensure your cactus is comfortable in its pot.
+          Ideally cacti should be repotted once a year, but there are
+          usually signs when your cactus needs a new home — pushing its
+          way out or growing its roots out of the pot’s drain holes.</div></p>
+        </div>
+
+<button onclick="myFunction()">Read more</button>
+        <script>
+          function myFunction() {
+              var x = document.getElementById("potting-body");
+              if (x.style.display === "none") {
+                  x.style.display = "block";
+              } else {
+                  x.style.display = "none";
+              }
+          }
+          </script>
+
+          <div class=“section” id="compositions">
+            <h2>Art of composing</h2>
+            <p>Something about creating succulent/cactus compositions in glass bubles, aquariums, spheres, etc.</p>
+            <button>Read more</button>
+          </div>
+          <div class=“section” id="gallery">
+            <h2>Virtual windowsill</h2>
+            <p>If we learn smt like inbuilding instagram feed for particular hashtag, it could be this section with lovely images of succulents/cactuses</p>
+            <!-- InstaWidget -->
+            <a href="https://instawidget.net/v/tag/cacti" id="link-039cd38dc858604b2baf16c74e6278dfa0f34ad93dd2c60979fc5bbb091ca582">#cacti</a>
+            <script src="https://instawidget.net/js/instawidget.js?u=039cd38dc858604b2baf16c74e6278dfa0f34ad93dd2c60979fc5bbb091ca582&width=300px"></script>
+            <button>Read more</button>
+          </div>
+          <div class=“contacts” id="contacts">
+            <h2>Contact us (in this section we can create either contact form or subscription form, whatever seems more logical)</2>
+            <form></form>
+          </div>
+          <div class=“follow” id="social media">
+            <h2>Find us in social media</h2>
+            <button>Buttons for SM following</button>
+          </div>
+        </body>
 </html>
