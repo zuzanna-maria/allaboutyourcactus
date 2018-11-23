@@ -21,16 +21,25 @@ body {
   position: relative;
 }
 
+#head-image {
+  height:auto;
+  width:80%;
+  display:inline-block;
+  text-align: center;
+  padding-left: 5%;
+}
+
 h1 {
   font-weight: bold;
   padding: 5% 5% 5% 50%;
+  font-size: 45px;
 }
 
 p1 {
   margin: 0 auto;
   display: block;
   padding: 10% 10% 3% 10%;
-
+  font-size: 20px;
 }
 
  #img1 {
@@ -41,9 +50,9 @@ p1 {
  }
 
  #img2 {
-   margin: 5% 5% 5% 58%;
+   margin: 5% 5% 5% 68%;
    position: absolute;
-   padding: 5%;
+   padding: 5% 5% 5% 5%;
    max-width: 100%;
  }
 
@@ -55,7 +64,7 @@ p1 {
  }
 
 #choosing-plant {
-  background-color: #D89082;
+  background-color: #d88383;
   margin: 2% 20% -5% 10%;
   position: relative;
   padding: 2%;
@@ -69,6 +78,11 @@ p2 {
   margin: 0 auto;
   display: block;
   padding: 3%;
+}
+
+#choosing-plant:hover {
+    opacity: 1;
+    z-index: 1;
 }
 
 h2 {
@@ -98,17 +112,22 @@ p6 {
 }
 
 #watering {
-  background-color: #D89082;
+  background-color: #d89883;
   margin: -2% 10% -5% 30%;
   position: relative;
   padding: 2%;
   max-width: 70%;
   opacity: 0.8;
   border-radius: 25px;
-
 }
+
+#watering:hover {
+    opacity: 1;
+    z-index: 1;
+}
+
 #gallery{
-  background-color: #E5BDC8;
+  background-color: #d8d883;
   margin: 2% 30% 2% 10%;
   position: static;
   padding: 2%;
@@ -117,8 +136,13 @@ p6 {
 border-radius: 25px;
 }
 
+#gallery:hover {
+    opacity: 1;
+    z-index: 1;
+}
+
 #lightning {
-  background-color: #D89082;
+  background-color: #d8ad83;
   margin: 2% 30% -5% 10%;
   position: static;
   padding: 2%;
@@ -127,21 +151,37 @@ border-radius: 25px;
   border-radius: 25px;
 }
 
+#lightning:hover {
+    opacity: 1;
+    z-index: 1;
+}
 
 #potting {
-
   margin: 2% 10% -5% 30%;
   position: static;
   padding: 2%;
   max-width: 70%;
-  background-color: #D89082;
+  background-color: #d8c383;
   opacity: 0.8;
   border-radius: 25px;
-
 }
 
-.footer {
+#potting:hover {
+    opacity: 1;
+    z-index: 1;
+}
+
+section.footer {
   position: absolute;
-  margin: 10% 10% -5% 30%;
-  padding: 10% 5% 0% 5%;
+  margin: -7% 10% 10% 10%;
+  padding: 2%;
+  background-color:#add883;
+  position: relative;
+  border-radius: 25px;
+  opacity: 0.9;
+  font-size: 20px;
+  }
+
+#SMimg {
+  max-width: 100%;
 }

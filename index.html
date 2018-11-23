@@ -3,7 +3,8 @@
 <head>
   <link href='style.css' rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900" rel="stylesheet">
-  <title>all about your cactus</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <title>All about your cactus</title>
 </head>
 
 <body>
@@ -19,19 +20,21 @@
         <p1>Cacti and succulents are popular home and office plants as they easily fit into various interiors, help to create a cozy atomsphere, and are not demanding in care. However, even seemingly low plants still require some attention to stay healthy. We are here to share basic rules and expert tips on planting so there is always a happy plant in each your pot!</p1>
       </div>
 
-
+      <div class="image" id="head-image">
+        <img src="img0.png" alt="cactus image" height=auto width=80%;>
+      </div>
 
           <div class="section">
             <div id="choosing-plant">
 
             <p2> <h2>choosing your plant</h2>
             There are several things to consider when choosing your new prickly companion. Would you like your cactus to be a dramatic statement piece or small and discreet?  Are you prepared to give your plant some TLC or are you after something more low-maintenance? Our quiz will give you some ideas on what kind of cactus could be perfect for you. </p2>
-            <button>Read more</button>
+            <button class="btn btn-info">Read more</button>
           </div>
         </div>
 
         <div class="image" id="img1">
-          <img src="cactus.jpg" alt="cactus image" height="200px" width="200px">
+          <img src="flower1.png" alt="cactus image" height="200px" width="200px">
         </div>
 
       <div class="read-more" id="watering">
@@ -45,7 +48,7 @@
 
 
 
-        <button onclick="myFunction()">Read more</button>
+        <button onclick="myFunction()" class="btn btn-info">Read more</button>
         <script>
               function myFunction() {
                 var x = document.getElementById("watering-body");
@@ -59,7 +62,7 @@
       </div>
 
       <div class="image" id="img2">
-        <img src="cactus.jpg" alt="cactus image" height="200px" width="200px">
+        <img src="flower2.png" alt="cactus image" height="200px" width="155px">
       </div>
 
       <div class="section" id="lightning">
@@ -69,7 +72,7 @@
             Too much light can cause your cactus to appear 'bleached out’ or even scorch, causing permanent damage, so it’s important to make sure to keep an eye on it during the summer months.When your cactus lacks sunlight it can start to reach for the light source — making it look elongated or misshapen. If you see this happening, place your cactus in a sunnier spot, but do so gradually to avoid scorching. If you are unable to provide your cactus with sufficient sunlight indoors, consider investing in a grow light fixture. The light should be at least 2,000 lumens for each square of light to provide the kind of light exposure the cacti would get in their natural habitat. </p>
           </div>
 
-          <button onclick="myFunction()">Read more</button>
+          <button onclick="myFunction()" class="btn btn-info">Read more</button>
           <script>
             function myFunction() {
               var x = document.getElementById("lightning-body");
@@ -82,7 +85,7 @@
         </div>
 
         <div class="image" id="img3">
-          <img src="cactus.jpg" alt="cactus image" height="200px" width="200px">
+          <img src="flower3.png" alt="cactus image" height="200px" width="200px">
         </div>
 
       <div class="section" id="potting">
@@ -93,7 +96,7 @@
           </div>
 
 
-          <button onclick="myFunction()">Read more</button>
+          <button onclick="myFunction()" class="btn btn-info">Read more</button>
           <script>
             function myFunction() {
             var x = document.getElementById("potting-body");
@@ -115,21 +118,42 @@
           <a href="https://instawidget.net/v/tag/cacti" id="link-a780ebe66472263630ba55fd1a09283ad6fca283ca2de96cd83c3aefce6da6f1">#cacti</a>
           <script src="https://instawidget.net/js/instawidget.js?u=a780ebe66472263630ba55fd1a09283ad6fca283ca2de96cd83c3aefce6da6f1&width=100%"></script>
         </div>
+</div>
 
+    <section class="footer">
+      <div class="row" id="footer">
 
-      <div class="footer">
-        <p7>contact us</p7>
+        <div class="col-sm-5">
+          <p7><b>subscribe to our newsletter</b></p>
+            <input id="email" type="email">
+            <button onclick=Subscribe() class="btn btn-info" id="subscription">Subscribe</button>
+            <script>
+              function Subscribe() {
+                onclick.alert('Thank you for subscription!')
+                p7.style.display='none'
+              }
+            </script>
+          </div>
 
+        <div class="col-sm-2 image" id="flower-divider">
+          <img src="flower4.png" alt="flower" height="100px" width="70px">
+        </div>
 
-
-        <p8>find us on social media</p8>
-        <div id="twitter-button"> <a href="https://twitter.com/intent/tweet?button_hashtag=follow&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #follow</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <div class="col-sm-5">
+          <p8><b>find us on social media</b></p>
+            <div class="image" id="SMimg">
+              <a href="https://www.pinterest.co.uk/"><img src="sm1.png" alt="SMlogo" height="50px" width="50px"></a>
+              <a href="https://twitter.com/"><img src="sm2.png" alt="SMlogo" height="50px" width="50px"></a>
+              <a href="https://www.instagram.com/?hl=en"><img src="sm3.png" alt="SMlogo" height="50px" width="50px"></a>
+              <a href="https://en-gb.facebook.com/"><img src="sm4.png" alt="SMlogo" height="50px" width="50px"></a>
+            </div>
+        </div>
 
       </div>
-    </div>
+    </section>
 
   </div>
-</div>
+
 </body>
 
 </html>
