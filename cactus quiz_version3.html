@@ -178,7 +178,7 @@ function next() {
 		//Store as a 6 digit binary string - e.g., 010101 = 2^6=32 choices
 		score=score+question_score;
 		//English cider
-		if ((score[0] == '1') || (score[0] == '2')) {
+		if ((score[0] == '1') || (score[1] == '0')) {
 			document.getElementById("quiz").innerHTML="";
 			document.getElementById("responseLHStitle").innerHTML="<h2 style='font-family:Verdanna;color:white;'>Try one of these </h2>";
 			document.getElementById("responseLHSdescription").innerHTML="<p style='font-family:Georgia;color:white;'>This includes the English “West Country” plus ciders inspired by that style. These ciders are made with bittersweet and bitter-sharp apple varieties cultivated specifically for cider making.</p>";
@@ -196,9 +196,25 @@ function next() {
 
 
 		//French cider
-		else if ((score[1] == '1') || (score[1] == '1')) {
+		else if ((score[0] == '0') || (score[1] == '1')) {
 			document.getElementById("quiz").innerHTML="";
 			document.getElementById("responseLHStitle").innerHTML="<h2 style='font-family:Verdanna;color:white;'>You ought to try a French Cider!</h2>";
+			document.getElementById("responseLHSdescription").innerHTML="<p style='font-family:Georgia;color:white;'>This is a cider made with  made with bittersweet and bitter-sharp apple varieties cultivated specifically for cider making.</p>";
+			document.getElementById("responseLHSaroma").innerHTML="<p style='font-family:Georgia;color:white;'><b>Aroma/Flavor:</b> Fruity character/aroma. This may come from slow or arrested fermentation or approximated by back sweetening with juice. Tends to a rich fullness.</p>";
+			document.getElementById("responseLHSappearance").innerHTML="<p style='font-family:Georgia;color:white;'><b>Appearance:</b> Clear to brilliant, medium to deep gold color.</p>";
+			document.getElementById("responseLHSmouthfeel").innerHTML="<p style='font-family:Georgia;color:white;'><b>Mouthfeel:</b> Medium to full, mouth filling. Moderate tannin apparent mainly as astringency. Carbonation moderate to champagne-like, but at higher levels it must not gush or foam.</p>";
+			document.getElementById("responseLHSoverallimpression").innerHTML="<p style='font-family:Georgia;color:white;'><b>Overall Impression:</b> Medium to sweet, full-bodied, rich.</p>";
+			document.getElementById("responseLHSABV").innerHTML="<p style='font-family:Georgia;color:white;'><b>ABV:</b> 3-6%</p>";
+			document.getElementById("responseLHScommercialexamples").innerHTML="<p style='font-family:Georgia;color:white;'><b>Commercial Examples:</b> [US] West County Reine de Pomme (MA), Rhyne Cider (CA); [France] Eric Bordelet (various), Etienne Dupont, Etienne Dupont Organic, Bellot</p>";
+			document.getElementById("responseRHS").src="https://s3-us-west-2.amazonaws.com/cyderz.com/sagarrak_zanpatzen2.jpg";
+			document.getElementById("quizshareimage").src="https://s3-us-west-2.amazonaws.com/cyderz.com/share-button-fb3.png";
+			document.getElementById("quizshare").href = "javascript:fbShare('http://www.cidercraft.com/flavor_profile/', 'Which type of cider are you?', 'You got a French Cider! This is a cider made with  made with bittersweet and bitter-sharp apple varieties cultivated specifically for cider making.', 'https://s3-us-west-2.amazonaws.com/cyderz.com/sagarrak_zanpatzen2.jpg', 520, 350)";
+			document.getElementById("resultimageattribute").innerHTML="Licensed from Sagardun under the Creative Commons Attribution-Share Alike 3.0 Unported License (http://creativecommons.org/licenses/by-sa/3.0/deed.en)";
+		}
+
+		else if ((score[0] == '1') || (score[1] == '1')) {
+			document.getElementById("quiz").innerHTML="";
+			document.getElementById("responseLHStitle").innerHTML="<h2 style='font-family:Verdanna;color:white;'>CIDR</h2>";
 			document.getElementById("responseLHSdescription").innerHTML="<p style='font-family:Georgia;color:white;'>This is a cider made with  made with bittersweet and bitter-sharp apple varieties cultivated specifically for cider making.</p>";
 			document.getElementById("responseLHSaroma").innerHTML="<p style='font-family:Georgia;color:white;'><b>Aroma/Flavor:</b> Fruity character/aroma. This may come from slow or arrested fermentation or approximated by back sweetening with juice. Tends to a rich fullness.</p>";
 			document.getElementById("responseLHSappearance").innerHTML="<p style='font-family:Georgia;color:white;'><b>Appearance:</b> Clear to brilliant, medium to deep gold color.</p>";

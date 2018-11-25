@@ -1,0 +1,147 @@
+body {
+  background-image: url(background.jpg);
+  padding: 5%;
+  z-index: -1;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.background {
+  height: 99%;
+  width: 80%;
+  margin: 5% 10% 10% 10%;
+  background-color: lightblue;
+  position: relative;
+  border-radius: 25px;
+  opacity: 0.9;
+}
+
+#intro {
+  margin: 2%% 2% 2% 2%;
+  padding: 2;
+  position: relative;
+}
+
+h1 {
+  font-weight: bold;
+  padding: 5% 5% 5% 50%;
+}
+
+p1 {
+  margin: 0 auto;
+  display: block;
+  padding: 10% 10% 3% 10%;
+
+}
+
+ #img1 {
+   margin: 5% 5% 5% 5%;
+   position: absolute;
+   padding: 5%;
+   max-width: 100%;
+ }
+
+ #img2 {
+   margin: 5% 5% 5% 58%;
+   position: absolute;
+   padding: 5%;
+   max-width: 100%;
+ }
+
+ #img3 {
+   margin: 5% 8% 5% 5%;
+   position: absolute;
+   padding: 5%;
+   max-width: 100%;
+ }
+
+#choosing-plant {
+  background-color: #D89082;
+  margin: 2% 20% -5% 10%;
+  position: relative;
+  padding: 2%;
+  max-width: 100%;
+  opacity: 0.8;
+  border-radius: 25px;
+}
+
+
+p2 {
+  margin: 0 auto;
+  display: block;
+  padding: 3%;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+p3 {
+  margin: 0 auto;
+  display: block;
+  padding: 3%;
+}
+
+p4 {
+  margin: 0 auto;
+  display: block;
+  padding: 3%;
+}
+p5 {
+  margin: 0 auto;
+  display: block;
+  padding: 3%;
+}
+p6 {
+  margin: 0 auto;
+  display: block;
+  padding: 3%;
+}
+
+#watering {
+  background-color: #D89082;
+  margin: -2% 10% -5% 30%;
+  position: relative;
+  padding: 2%;
+  max-width: 70%;
+  opacity: 0.8;
+  border-radius: 25px;
+
+}
+#gallery{
+  background-color: #E5BDC8;
+  margin: 2% 30% 2% 10%;
+  position: static;
+  padding: 2%;
+  max-width: 70%;
+  opacity: 0.9;
+border-radius: 25px;
+}
+
+#lightning {
+  background-color: #D89082;
+  margin: 2% 30% -5% 10%;
+  position: static;
+  padding: 2%;
+  max-width: 70%;
+  opacity: 0.8;
+  border-radius: 25px;
+}
+
+
+#potting {
+
+  margin: 2% 10% -5% 30%;
+  position: static;
+  padding: 2%;
+  max-width: 70%;
+  background-color: #D89082;
+  opacity: 0.8;
+  border-radius: 25px;
+
+}
+
+.footer {
+  position: absolute;
+  margin: 10% 10% -5% 30%;
+  padding: 10% 5% 0% 5%;
+}
