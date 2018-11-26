@@ -26,10 +26,9 @@
 
           <div class="section">
             <div id="choosing-plant">
-
             <p2> <h2>choosing your plant</h2>
             There are several things to consider when choosing your new prickly companion. Would you like your cactus to be a dramatic statement piece or small and discreet?  Are you prepared to give your plant some TLC or are you after something more low-maintenance? Our quiz will give you some ideas on what kind of cactus could be perfect for you. </p2>
-            <button class="btn btn-info">Read more</button>
+            <a class="btn btn-dark" id="quiz" href="cactus-quiz.html">Take our test >></a>
           </div>
         </div>
 
@@ -45,10 +44,7 @@
              When growing, water your cactus once a week and make sure that the water soaks the ground thoroughly. To ensure your plant has all the compounds it needs, add a diluted fertilizer to the water you use - choose one with balanced proportions of nitrogen, phosphorus and potassium. Water your cactus more frequently in summer and spring. During fall and winter, the plant’s rest period, it’s advised to let the soil dry out between watering — as long as you ensure the cactus doesn’t shrivel. Tap water can be alkaline or hard, which can cause buildup of minerals in the soil. This is why it’s a good idea to periodically repot your plants — and collect rain water for your plants if you can.
           </p3>
         </div>
-
-
-
-        <button onclick="myFunction()" class="btn btn-info">Read more</button>
+        <button onclick="myFunction()" class="btn btn-dark">Read more</button>
         <script>
               function myFunction() {
                 var x = document.getElementById("watering-body");
@@ -58,7 +54,7 @@
                   x.style.display = "none";
                 }
               }
-            </script>
+          </script>
       </div>
 
       <div class="image" id="img2">
@@ -72,7 +68,7 @@
             Too much light can cause your cactus to appear 'bleached out’ or even scorch, causing permanent damage, so it’s important to make sure to keep an eye on it during the summer months.When your cactus lacks sunlight it can start to reach for the light source — making it look elongated or misshapen. If you see this happening, place your cactus in a sunnier spot, but do so gradually to avoid scorching. If you are unable to provide your cactus with sufficient sunlight indoors, consider investing in a grow light fixture. The light should be at least 2,000 lumens for each square of light to provide the kind of light exposure the cacti would get in their natural habitat. </p>
           </div>
 
-          <button onclick="myFunction()" class="btn btn-info">Read more</button>
+          <button onclick="myFunction()" class="btn btn-dark">Read more</button>
           <script>
             function myFunction() {
               var x = document.getElementById("lightning-body");
@@ -94,9 +90,7 @@
           <div id=potting-body>
             Most cacti have fibrous, superficial roots, which means they will enjoy being in a wide, shallow pot. Make sure to check what type of root system your species of cactus has to ensure you provide a suitable container for it to grow in. The soil you choose for your cactus should drain well to ensure water doesn’t build up in the pot. A good tip to ensure this is to mix some compost, sand and grit (for example crushed pumice) into the soil.<br> Regular repotting is important to refresh the soil and ensure your cactus is comfortable in its pot. Ideally cacti should be repotted once a year, but there are usually signs when your cactus needs a new home — pushing its way out or growing its roots out of the pot’s drain holes.</p>
           </div>
-
-
-          <button onclick="myFunction()" class="btn btn-info">Read more</button>
+          <button onclick="myFunction()" class="btn btn-dark">Read more</button>
           <script>
             function myFunction() {
             var x = document.getElementById("potting-body");
@@ -123,17 +117,19 @@
     <section class="footer">
       <div class="row" id="footer">
 
-        <div class="col-sm-5">
-          <p7><b>subscribe to our newsletter</b></p>
-            <input id="email" type="email">
-            <button onclick=Subscribe() class="btn btn-info" id="subscription">Subscribe</button>
-            <script>
-              function Subscribe() {
-                onclick.alert('Thank you for subscription!')
-                p7.style.display='none'
-              }
-            </script>
-          </div>
+
+            <div id="subscribed" style="display:none" class="col-sm-5">Thank you for your subscription!</div>
+            <div id="subscription" class="col-sm-5">
+                <p><b>subscribe to our newsletter</b></p>
+                <input id="email" type="email">
+                <button onclick=Subscribe() class="btn btn-dark" id="subscription">Subscribe</button>
+                <script>
+                  function Subscribe() {
+                    document.getElementById('subscription').style.display = 'none';
+                    document.getElementById('subscribed').style.display = 'inherit'
+                    }
+                </script>
+              </div>
 
         <div class="col-sm-2 image" id="flower-divider">
           <img src="flower4.png" alt="flower" height="100px" width="70px">

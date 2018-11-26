@@ -9,7 +9,7 @@ body {
   height: 99%;
   width: 80%;
   margin: 5% 10% 10% 10%;
-  background-color: lightblue;
+  background-color: #89c194;
   position: relative;
   border-radius: 25px;
   opacity: 0.9;
@@ -26,12 +26,12 @@ body {
   width:80%;
   display:inline-block;
   text-align: center;
-  padding-left: 5%;
+  padding-left: 7%;
 }
 
 h1 {
   font-weight: bold;
-  padding: 5% 5% 5% 50%;
+  padding: 5% 5% 5% 65%;
   font-size: 45px;
 }
 
@@ -64,15 +64,17 @@ p1 {
  }
 
 #choosing-plant {
-  background-color: #d88383;
+  background-color:rgba(179, 179, 25, 0.8);
   margin: 2% 20% -5% 10%;
   position: relative;
   padding: 2%;
   max-width: 100%;
-  opacity: 0.8;
   border-radius: 25px;
 }
 
+a#quiz {
+  text-decoration: none;
+}
 
 p2 {
   margin: 0 auto;
@@ -81,7 +83,7 @@ p2 {
 }
 
 #choosing-plant:hover {
-    opacity: 1;
+    background-color:rgba(179, 179, 25, 1);
     z-index: 1;
 }
 
@@ -112,47 +114,31 @@ p6 {
 }
 
 #watering {
-  background-color: #d89883;
+  background-color:rgba(158, 158, 46, 0.8);
   margin: -2% 10% -5% 30%;
   position: relative;
-  padding: 2%;
+  padding: 4% 2% 2% 2%;
   max-width: 70%;
-  opacity: 0.8;
   border-radius: 25px;
 }
 
 #watering:hover {
-    opacity: 1;
-    z-index: 1;
-}
-
-#gallery{
-  background-color: #d8d883;
-  margin: 2% 30% 2% 10%;
-  position: static;
-  padding: 2%;
-  max-width: 70%;
-  opacity: 0.9;
-border-radius: 25px;
-}
-
-#gallery:hover {
-    opacity: 1;
+    background-color:rgba(158, 158, 46, 1);
     z-index: 1;
 }
 
 #lightning {
-  background-color: #d8ad83;
+  background-color:rgba(163, 163, 41, 0.8);
   margin: 2% 30% -5% 10%;
   position: static;
   padding: 2%;
   max-width: 70%;
-  opacity: 0.8;
   border-radius: 25px;
+  z-index: auto;
 }
 
 #lightning:hover {
-    opacity: 1;
+    background-color:rgba(163, 163, 41, 1);
     z-index: 1;
 }
 
@@ -161,13 +147,26 @@ border-radius: 25px;
   position: static;
   padding: 2%;
   max-width: 70%;
-  background-color: #d8c383;
-  opacity: 0.8;
+  background-color: rgba(168, 168, 36, 0.8);
   border-radius: 25px;
 }
 
 #potting:hover {
-    opacity: 1;
+    background-color: rgba(168, 168, 36, 1);
+    z-index: 1;
+}
+
+#gallery{
+  background-color:	rgba(179, 179, 25, 0.8);
+  margin: 2% 30% 2% 10%;
+  position: static;
+  padding: 2%;
+  max-width: 70%;
+  border-radius: 25px;
+}
+
+#gallery:hover {
+    background-color:	rgba(179, 179, 25, 1);
     z-index: 1;
 }
 
