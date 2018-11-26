@@ -6,73 +6,17 @@
 		<link href="https://s3-us-west-2.amazonaws.com/cyderz.com/bootstrap-theme.css" type="text/css" rel="stylesheet">
 		<link href="https://s3-us-west-2.amazonaws.com/cyderz.com/main.css" type="text/css" rel="stylesheet">
 		<link href="https://s3-us-west-2.amazonaws.com/cyderz.com/flexslider.css" type="text/css" rel="stylesheet">
+		<link href='style2.css' rel="stylesheet">
 
 		<!-- JSS -->
-        <script src="https://s3-us-west-2.amazonaws.com/cyderz.com/jquery.min.js" type="text/javascript"></script>
-        <script src="https://s3-us-west-2.amazonaws.com/cyderz.com/bootstrap.min.js" type="text/javascript"></script>
-        <script src="https://s3-us-west-2.amazonaws.com/cyderz.com/d3.v3.min.js" type="text/javascript"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/cyderz.com/jquery.min.js" type="text/javascript"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/cyderz.com/bootstrap.min.js" type="text/javascript"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/cyderz.com/d3.v3.min.js" type="text/javascript"></script>
 		<script src="https://s3-us-west-2.amazonaws.com/cyderz.com/main.js" type="text/javascript"></script>
 		<script src="https://s3-us-west-2.amazonaws.com/cyderz.com/backstretch.js" type="text/javascript"></script>
 		<script src="https://s3-us-west-2.amazonaws.com/cyderz.com/jquery.flexslider.js" type="text/javascript"></script>
-
-			<!-- Restyling existing base -->
-		<style>
-			body {
-				background-color:black;
-			}
-			#section1 {
-				padding-left:50px;
-				padding-top:100px;
-			}
-		</style>
-
-		<!-- New style -->
-		<style>
-			#question {
-				font-size:20px;
-				font-family:'Verdanna';
-			}
-			.r_on { background: #FFCC99 !important; }
-			.label_radio, .r_off{
-				background: #FFE6CC;
-				text-align:left;
-				padding-left:5px;
-				padding-top:12px;
-				font-family:'Georgia';
-				font-size:20px;
-				font-weight:normal;
-			}
-			.label_radio:hover {
-				opacity:0.8;
-			}
-			label{
-				width:400px;
-				height:50px;
-				overflow:hidden;
-				display:block; cursor:pointer;
-			}
-			input[type=radio]{display:none;}
-			.btn {
-				margin-left:375px;
-			}
-			#question {
-				padding-left:40px;
-				padding-bottom:10px;
-				font-size:24px;
-				font-family:'Verdanna';
-			}
-			#quizshareimage:hover {
-				opacity:0.8;
-			}
-			#resultimageattribute {
-				padding-bottom:25px;
-			}
-			h3:hover {
-				opacity:0.8;
-			}
-		</style>
-
 </head>
+
 <body>
 	<div id="section1">
 	<div class="container" id="quiz">
@@ -264,16 +208,16 @@ setupLabel();
 //FB share
  function createFBShareLink(fbAppId,fbShareUrl,fbShareImg,fbShareName,fbShareCaption,fbShareDesc,baseURL) {
 	window.open('http://www.facebook.com/dialog/feed?app_id=' + FBVars.fbAppId + '&link=' + FBVars.fbShareUrl + '&picture='+ FBVars.fbShareImg + '&name=' + encodeURIComponent(FBVars.fbShareName) + '&caption=' + encodeURIComponent(FBVars.fbShareCaption) + '&description=' + encodeURIComponent(FBVars.fbShareDesc) + '&redirect_uri=' + FBVars.baseURL + 'popupClose.html' + '&display=popup', 'feedDialog', 'toolbar=0,status=0,width=626,height=436');
-}
-</script>
-<script>
+		}
+	</script>
+	<script>
 //do on ready
-$('label').click(function() {
+	$('label').click(function() {
     $(this).children("input").prop("checked", true);
     setupLabel();
-});
-setupLabel();
-</script>
+	});
+	setupLabel();
+	</script>
 
-</body>
+	</body>
 </html>
