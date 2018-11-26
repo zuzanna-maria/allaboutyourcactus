@@ -1,5 +1,6 @@
 body {
   background-image: url(background.jpg);
+  background-attachment: fixed;
   padding: 5%;
   z-index: -1;
   font-family: 'Montserrat', sans-serif;
