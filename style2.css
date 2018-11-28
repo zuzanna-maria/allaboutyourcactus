@@ -91,7 +91,3 @@ input[type=radio]{display:none;}
   width: 200px;
   height: 230px;
 }
-
-h3:hover {
-  opacity:0.8;
-}
