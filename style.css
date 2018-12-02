@@ -1,0 +1,199 @@
+body {
+  background-image: url(background.jpg);
+  background-attachment: fixed;
+  padding: 5%;
+  z-index: -1;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.background {
+  height: 99%;
+  width: 80%;
+  margin: 5% 10% 10% 10%;
+  background-color: #89c194;
+  position: relative;
+  border-radius: 25px;
+  opacity: 0.9;
+}
+
+#menu {
+  padding: 15% 0% 5% 30%;
+}
+
+
+h1 {
+  font-weight: bold;
+  padding: 5% 15% 5% 0%;
+  font-size: 45px;
+  float: right;
+}
+
+p1 {
+  margin: 0 auto;
+  display: block;
+  padding: 10% 10% 3% 10%;
+  font-size: 20px;
+}
+
+#intro {
+  margin: 2%% 2% 2% 2%;
+  padding: 2;
+  position: relative;
+}
+
+#head-image {
+  height:auto;
+  width:80%;
+  display:inline-block;
+  text-align: center;
+  padding-left: 7%;
+}
+
+ #img1 {
+   margin: 5% 5% 5% 5%;
+   position: absolute;
+   padding: 8% 5% 5% 5%;
+   max-width: 100%;
+ }
+
+ #img2 {
+   margin: 5% 5% 5% 68%;
+   position: absolute;
+   padding: 8% 5% 5% 5%;
+   max-width: 100%;
+ }
+
+ #img3 {
+   margin: 5% 8% 5% 5%;
+   position: absolute;
+   padding: 12% 5% 5% 5%;
+   max-width: 100%;
+   z-index: -1;
+ }
+
+#choosing-plant {
+  background-color:rgba(179, 179, 25, 0.8);
+  margin: 2% 20% -5% 10%;
+  position: relative;
+  padding: 2%;
+  max-width: 100%;
+  border-radius: 25px;
+}
+
+a#quiz {
+  text-decoration: none;
+}
+
+p2 {
+  margin: 0 auto;
+  display: block;
+  padding: 3%;
+}
+
+#choosing-plant:hover {
+    background-color:rgba(179, 179, 25, 1);
+    z-index: 1;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+p3 {
+  margin: 0 auto;
+  display: block;
+  padding: 3%;
+}
+
+p4 {
+  margin: 0 auto;
+  display: block;
+  padding: 3%;
+}
+p5 {
+  margin: 0 auto;
+  display: block;
+  padding: 3%;
+}
+p6 {
+  margin: 0 auto;
+  display: block;
+  padding: 3%;
+}
+
+#watering {
+  background-color:rgba(158, 158, 46, 0.8);
+  margin: -2% 10% -5% 30%;
+  position: relative;
+  padding: 4% 2% 2% 2%;
+  max-width: 70%;
+  border-radius: 25px;
+}
+
+#watering:hover {
+    background-color:rgba(158, 158, 46, 1);
+    z-index: 1;
+}
+
+#lightning {
+  background-color:rgba(163, 163, 41, 0.8);
+  margin: 2% 30% -5% 10%;
+  position: static;
+  padding: 2%;
+  max-width: 70%;
+  border-radius: 25px;
+  z-index: auto;
+}
+
+#lightning:hover {
+    background-color:rgba(163, 163, 41, 1);
+    z-index: 1;
+}
+
+#potting {
+  margin: 2% 10% -5% 30%;
+  position: static;
+  padding: 2%;
+  max-width: 70%;
+  background-color: rgba(168, 168, 36, 0.8);
+  border-radius: 25px;
+}
+
+#potting:hover {
+    background-color: rgba(168, 168, 36, 1);
+    z-index: 1;
+}
+
+#gallery{
+  background-color:	rgba(179, 179, 25, 0.8);
+  margin: 2% 30% 2% 10%;
+  position: static;
+  padding: 2%;
+  max-width: 70%;
+  border-radius: 25px;
+}
+
+#gallery:hover {
+    background-color:	rgba(179, 179, 25, 1);
+    z-index: 1;
+}
+
+section.footer {
+  position: absolute;
+  margin: -7% 10% 10% 10%;
+  padding: 2%;
+  background-color:#add883;
+  position: relative;
+  border-radius: 25px;
+  opacity: 0.9;
+  font-size: 20px;
+  }
+
+#SMimg {
+  max-width: 100%;
+}
+
+#dropdownMenuButton {
+  flex: 0 0 50%;
+  min-width: 50%;
+}
