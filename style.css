@@ -68,6 +68,7 @@ p1 {
    position: absolute;
    padding: 15% 5% 5% 5%;
    max-width: 100%;
+   z-index: -1;
  }
 
 #choosing-plant {

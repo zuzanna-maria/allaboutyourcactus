@@ -15,6 +15,7 @@
 		<script src="https://s3-us-west-2.amazonaws.com/cyderz.com/main.js" type="text/javascript"></script>
 		<script src="https://s3-us-west-2.amazonaws.com/cyderz.com/backstretch.js" type="text/javascript"></script>
 		<script src="https://s3-us-west-2.amazonaws.com/cyderz.com/jquery.flexslider.js" type="text/javascript"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
@@ -46,9 +47,9 @@
 <div class="background">
 
 	<div id="section1">
-		<div class="container" id="quiz">
+		<div class="container-fluid" id="quiz">
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col-md-6 col-xs-12">
 				<form class="quiz">
 					<div id="question">Would you like to keep your cactus indoors or outdoors?</div>
 						<ul class="answers">
@@ -69,20 +70,20 @@
 								</label>
 							</li>
 						</ul>
-					<button type="button" class="btn btn-dark" onclick="next()">NEXT</button>
+					<button type="button" class="btn btn-dark" onclick="next();colourChange()">NEXT</button>
 				</form>
 			</div>
 		<!-- RHS foto -->
-			<div class="col-md-6">
+			<div class="col-md-6 col-xs-12">
 				<div class="centerBlock">
-					<img id="RHSimage" src="window.png" alt="cactus image" height="250px" width="250px">
+					<img class="img-responsive" id="RHSimage" src="window.png" alt="cactus image" width="250px" height="250px">
 				</div>
 			</div>
 		</div>
 	</div>
 
 	<!-- Quiz result message -->
-	<div class="container" id="results">
+	<div class="container-fluid" id="results">
 		<div class="row">
 			<div class="col-md-6">
 				<div id="responseLHStitle"></div>
@@ -142,29 +143,34 @@ function next() {
 		score=score+question_score;
 
 		//Option 1
-		if ((score[0] == '0') || (score[0] == '1')) {
+		if ((score[0] == '0') || (score[2] == '0')) {
 			document.getElementById("quiz").innerHTML="";
-			document.getElementById("responseLHStitle").innerHTML="<h2 style='font-family:Verdanna;color:white;'>Headline</h2>";
-			document.getElementById("responseLHSdescription").innerHTML="<p style='font-family:Georgia;color:white;'>Option description</p>";
+			document.getElementById("responseLHStitle").innerHTML="<h2 style='color:white;'>Your ideal cacti is... <b>Opuntia</b></h2>";
+			document.getElementById("responseLHSdescription").innerHTML="<p style='color:white;'>Opuntia has features that separate them from other cacti genus. They grow in joints or segments. Commonly called prickly pears, they have round, flat joints called pads. They are also fiercely armed with glochids or small, barbed spines. The pads can easily root and propagate on their own. Several species of prickly pears are cultivated for their edible fruits and are commonly consumed in India and Mexico. Most opuntia species are easy plants to grow and are considered invasive in some areas they are not naturally occurring.</p>";
 			document.getElementById("responseRHS").src="option1.png";
 		}
 		//Option 2
-		else if ((score[2] == '1') || (score[2] == '1')) {
+		else if (score[1] == '0')  {
 			document.getElementById("quiz").innerHTML="";
-			document.getElementById("responseLHStitle").innerHTML="<h2 style='font-family:Verdanna;color:white;'>Headline2</h2>";
-			document.getElementById("responseLHSdescription").innerHTML="<p style='font-family:Georgia;color:white;'>Option description 2</p>";
+			document.getElementById("responseLHStitle").innerHTML="<h2 style='color:white;'>Your ideal cacti is... <b>Echinocereus</b></h2>";
+			document.getElementById("responseLHSdescription").innerHTML="<p>Echinocereus is a genus that is much loved by cactus growers world-wide. All Echinocereus are small plants that are quite suitable for growing in pots and greenhouses. The stems of this genus are more often than not under a foot in height and perhaps 2 or 3 inches in diameter. There is a wide variety of spination that includes some of the most fierce and dramatic spines covering the plant stem so that it is not even visible. Most have moderately sized spines evenly distributed, some have very colorful spines even in alternating patterns. Aside from being a cultivation-friendly size, Echinocereus have some of the most brilliant flowers among the cacti. They range in color from electric-pink to deep scarlet to translucent browns and greens and even bright yellow. Many species feature two-toned flowers with one color toward the center and another color on the outer parts of the flower. </p>";
 			document.getElementById("responseRHS").src="option2.png";
 		}
 
 		//Option 3
 		else {
 			document.getElementById("quiz").innerHTML="";
-			document.getElementById("responseLHStitle").innerHTML="<h2 style='font-family:Verdanna;color:white;'>Headline3</h2>";
-			document.getElementById("responseLHSdescription").innerHTML="<p style='font-family:Georgia;color:white;'>Option description 3</p>";
+			document.getElementById("responseLHStitle").innerHTML="<h2 style='color:white;'>Your ideal cacti is... <b>Aloe Vera</b></h2>";
+			document.getElementById("responseLHSdescription").innerHTML="<p style='color:white;'>It's not just a sunburn soother. Grown at home, aloe vera can provide some tropical flair to your desktop or garden as an easy-going succulent. Aloe has won over many home gardeners for its hardiness and tolerance of forgetful waterers. As a bonus, your aloe will produce a tall stalk of small, bell-shaped flowers from time to time. Once the blooms fade, you can snip the stem off at the base. <br> Even better, aloe plants also produce new, smaller plants perfect for propagation. If you notice one of these babies, dump out the dirt and tease apart the roots of the different plants, replanting in separate containers.</p>";
 			document.getElementById("responseRHS").src="option3.png";
 		}
 	}
 }
+	</script>
+	<script>
+	function colourChange() {
+		label.style.background="#FFE6CC"
+	}
 	</script>
 	<script>
 		function setupLabel() {
