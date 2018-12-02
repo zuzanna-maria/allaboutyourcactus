@@ -25,7 +25,7 @@
 		<div class="row">
 		<div class="col-sm-4">
 			<div class="dropdown" id="menu">
-				<button class="btn btn-secondary dropdown-toggle col-sm-6" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					menu
 				</button>
 				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -70,7 +70,7 @@
 								</label>
 							</li>
 						</ul>
-					<button type="button" class="btn btn-dark" onclick="next();colourChange()">NEXT</button>
+					<button type="button" class="btn btn-dark right" onclick="next()">NEXT</button>
 				</form>
 			</div>
 		<!-- RHS foto -->
@@ -142,8 +142,10 @@ function next() {
 		//Store as a 6 digit binary string - e.g., 010101 = 2^6=32 choices
 		score=score+question_score;
 
+		$('#results').show();
+
 		//Option 1
-		if ((score[0] == '0') || (score[2] == '0')) {
+		if ((score[0] == '0') && (score[2] == '0')) {
 			document.getElementById("quiz").innerHTML="";
 			document.getElementById("responseLHStitle").innerHTML="<h2 style='color:white;'>Your ideal cacti is... <b>Opuntia</b></h2>";
 			document.getElementById("responseLHSdescription").innerHTML="<p style='color:white;'>Opuntia has features that separate them from other cacti genus. They grow in joints or segments. Commonly called prickly pears, they have round, flat joints called pads. They are also fiercely armed with glochids or small, barbed spines. The pads can easily root and propagate on their own. Several species of prickly pears are cultivated for their edible fruits and are commonly consumed in India and Mexico. Most opuntia species are easy plants to grow and are considered invasive in some areas they are not naturally occurring.</p>";
@@ -165,16 +167,12 @@ function next() {
 			document.getElementById("responseRHS").src="option3.png";
 		}
 	}
+	$('.label_radio').each(function () {
+		$(this).removeClass('r_on');
+	});
 }
-	</script>
-	<script>
-	function colourChange() {
-		label.style.background="#FFE6CC"
-	}
-	</script>
-	<script>
-		function setupLabel() {
-    if ($('.label_radio input').length) {
+function setupLabel() {
+    if ($('.label_radio input').length > 0) {
         $('.label_radio').each(function() {
             $(this).removeClass('r_on');
         });
@@ -188,7 +186,9 @@ $('label').click(function() {
     $(this).children("input").prop("checked", true);
     setupLabel();
 });
-setupLabel();
+$(function(){
+	setupLabel();
+});
 	</script>
 
 </div>

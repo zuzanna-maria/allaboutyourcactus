@@ -52,21 +52,21 @@ p1 {
  #img1 {
    margin: 5% 5% 5% 5%;
    position: absolute;
-   padding: 15% 5% 5% 5%;
+   padding: 8% 5% 5% 5%;
    max-width: 100%;
  }
 
  #img2 {
    margin: 5% 5% 5% 68%;
    position: absolute;
-   padding: 15% 5% 5% 5%;
+   padding: 8% 5% 5% 5%;
    max-width: 100%;
  }
 
  #img3 {
    margin: 5% 8% 5% 5%;
    position: absolute;
-   padding: 15% 5% 5% 5%;
+   padding: 12% 5% 5% 5%;
    max-width: 100%;
    z-index: -1;
  }
@@ -191,4 +191,9 @@ section.footer {
 
 #SMimg {
   max-width: 100%;
+}
+
+#dropdownMenuButton {
+  flex: 0 0 50%;
+  min-width: 50%;
 }

@@ -17,7 +17,7 @@
     <div class="row">
     <div class="col-sm-4">
       <div class="dropdown" id="menu">
-        <button class="btn btn-secondary dropdown-toggle col-sm-6" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           menu
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -110,9 +110,14 @@
             <div id="subscription" class="col-sm-5">
                 <p><b>subscribe to our newsletter</b></p>
                 <input id="email" type="email">
-                <button onclick=Subscribe() class="btn-sm btn-dark" id="subscription">Subscribe</button>
+                <button onclick="subscribe()" class="btn-sm btn-dark" id="subscription">Subscribe</button>
                 <script>
-                  function Subscribe() {
+                  $('#email').keypress(function (event) {
+                    if (event.which == 13) {
+                      subscribe()
+                    }
+                  });
+                  function subscribe() {
                     document.getElementById('subscription').style.display = 'none';
                     document.getElementById('subscribed').style.display = 'inherit'
                     }
@@ -126,10 +131,10 @@
         <div class="col-sm-5">
           <p8><b>find us on social media</b></p>
             <div class="image" id="SMimg">
-              <a href="https://www.pinterest.co.uk/"><img src="sm1.png" alt="SMlogo" height="50px" width="50px"></a>
-              <a href="https://twitter.com/"><img src="sm2.png" alt="SMlogo" height="50px" width="50px"></a>
-              <a href="https://www.instagram.com/?hl=en"><img src="sm3.png" alt="SMlogo" height="50px" width="50px"></a>
-              <a href="https://en-gb.facebook.com/"><img src="sm4.png" alt="SMlogo" height="50px" width="50px"></a>
+              <a href="https://www.pinterest.co.uk/" target="_blank"><img src="sm1.png" alt="SMlogo" height="50px" width="50px"></a>
+              <a href="https://twitter.com/" target="_blank"><img src="sm2.png" alt="SMlogo" height="50px" width="50px"></a>
+              <a href="https://www.instagram.com/?hl=en" target="_blank"><img src="sm3.png" alt="SMlogo" height="50px" width="50px"></a>
+              <a href="https://en-gb.facebook.com/" target="_blank"><img src="sm4.png" alt="SMlogo" height="50px" width="50px"></a>
             </div>
         </div>
 
